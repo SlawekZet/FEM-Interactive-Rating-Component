@@ -1,0 +1,36 @@
+.rating-button {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: $dark-blue;
+  border: none;
+  color: $light-grey;
+}
+
+.rating-button:hover {
+  cursor: pointer;
+  background-color: $orange;
+  color: $white;
+}
+
+.submit-button {
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  background-color: $orange;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $white;
+  letter-spacing: 2px;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  background-color: $white;
+  color: $orange;
+}
+
+.active {
+  background-color: $medium-grey;
+  color: $white;
+}

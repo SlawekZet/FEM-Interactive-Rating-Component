@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <main>
+      <!-- Rating state start -->
+      <section class="rating-state">
+        <div class="star-image">
+          <img
+            src="/images/icon-star.svg"
+            alt="an icon of a star"
+            id="star-img"
+          />
+        </div>
+        <div class="text-container">
+          <h1>How did we do?</h1>
+          <p class="paragraph-text">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+        </div>
+        <div class="rating-section">
+          <button
+            class="rating-button"
+            id="rating-button-1"
+            value="1"
+            onclick="activateButton(1)"
+          >
+            1
+          </button>
+          <button
+            class="rating-button"
+            id="rating-button-2"
+            value="2"
+            onclick="activateButton(2)"
+          >
+            2
+          </button>
+          <button
+            class="rating-button"
+            id="rating-button-3"
+            value="3"
+            onclick="activateButton(3)"
+          >
+            3
+          </button>
+          <button
+            class="rating-button"
+            id="rating-button-4"
+            value="4"
+            onclick="activateButton(4)"
+          >
+            4
+          </button>
+          <button
+            class="rating-button"
+            id="rating-button-5"
+            value="5"
+            onclick="activateButton(5)"
+          >
+            5
+          </button>
+        </div>
+        <div class="error-message hidden">No score sleceted!</div>
+        <button class="submit-button" onclick="submit()">Submit</button>
+      </section>
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+      <section class="thank-you-state hidden">
+        <div class="thank-you-img">
+          <img
+            src="images/illustration-thank-you.svg"
+            alt="An ilustration showing a grey phone with a recipt printed out, an orange credit card on the left and an orange circle on the right"
+          />
+        </div>
+        <div class="score-display">
+          <p class="score-display-text">You selected X out of 5</p>
+        </div>
+        <div class="thank-you-paragraph">
+          <h1>Thank you!</h1>
+          <p class="thank-you-paragraph-text">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+      </section>
+      <!-- Thank you state end -->
+      <script src="scripts.js"></script>
+    </main>
+  </body>
+</html>
